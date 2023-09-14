@@ -1,0 +1,139 @@
+table{
+    background-color:rgb(131, 208, 243); 
+    color:black;
+    border: 3px solid black;    
+    border-collapse: collapse;            
+}
+tbody>tr>:nth-child(1){
+    text-align: center;
+}
+td,th{
+    border: 2px solid white;    
+    border-collapse: collapse;
+    padding: 8px;
+}
+th{
+    background-color: rgb(39, 39, 234);
+    color: white;
+    text-align: center;
+}
+textarea{
+    width: 60%;
+}
+.q{
+    color:black;
+    border: none;
+    border-collapse: collapse;
+    text-align: center;    
+}
+td{
+    padding: 6px;                
+}
+.h{
+    background-color: navy;
+    color: white;
+    padding: 10px 10px 10px 10px;    
+}
+body{
+    background-color: white;
+    font-family:'Poppins', sans-serif !important;    
+}
+input[type="text"],input[type="email"],input[type="number"]{
+    width: 50%;    
+}
+form{
+    width: 80%;
+}
+nav{
+    display: flex;
+    background-color: navy;        
+    font-size: 20px;    
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;    
+}
+p{
+    text-align: left; 
+    color: black;
+    font-size: 20px;
+}
+h1{
+    font-size: 30px;    
+}
+.navbar {
+    overflow: hidden;
+    display: flex;
+    background-color: navy;        
+    font-size: 20px;    
+    text-align: center;
+}
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    font-size: 20px;
+}
+.dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 10px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.t1 td{
+    padding: 10px 40px 10px 40px;
+    text-align: center;
+}
+
+.a1{
+    color: blue;
+    text-decoration: underline;
+    padding: 0;
+}
+marquee{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+    color: red;    
+}  

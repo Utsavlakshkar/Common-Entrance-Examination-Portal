@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>UPSC Application Form</title>        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>        
+    </head>
+    <body>            
+        <link rel="stylesheet" href="IWP Project Layout.css">
+        <center>                        
+            <h1 class="h"><img src="Logo.jpg" width="50" height="50">&nbsp;&nbsp;&nbsp;&nbsp;<b>STUDENT REGISTRATION FORM FOR UPSC</b>
+            <a href="Main Page.html"><span style="color: white;" class="glyphicon glyphicon-home"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </h1><br>
+            <form id="f" action="Backend.php" method="get">
+                <table>
+                    <tr>
+                        <td>FIRST NAME</td>
+                        <td><input type="text" placeholder="Enter First Name" id="fname" name="fname" required title="Max 30 characters a-z and A-Z"></td>
+                    </tr>
+                    <tr>
+                        <td>LAST NAME</td>
+                        <td><input type="text" placeholder="Enter Last Name" id="lname" name="lname" title="Max 30 characters a-z and A-Z"></td>
+                    </tr>
+                    <tr>
+                        <td>DATE OF BIRTH</td>
+                        <td>
+                            <input type="text" style="width: 10%;" id="date" name="date" placeholder="DD" required title="Enter Date">                            
+                            <input type="text" style="width: 10%;" id="month" name="month" placeholder="MM" required title="Enter Month">                            
+                            <input type="text" style="width: 10%;" id="year" name="year" placeholder="YYYY" required title="Enter Year">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>EMAIL ID</td>
+                        <td><input type="text" placeholder="Enter Email" id="email" name="email" maxlength="30" required title="Should be a valid e-mail"></td>
+                    </tr>
+                    <tr>
+                        <td>MOBILE NUMBER</td> 
+                        <td><input type="text" id="mobile" name="mobile" placeholder="Enter Mobile Number" required title="10 digit number"></td>
+                    </tr>                    
+                    <tr>
+                        <td>ADDRESS</td>
+                        <td><input type="text" placeholder="Enter Address" id="address" name="address" required title="Should be a valid address"></td>
+                    </tr>
+                    <tr>
+                        <td>CITY</td>
+                        <td><input type="text" placeholder="Enter City" id="city" name="city" required title="Max 30 characters a-z and A-Z"></td>
+                    </tr>
+                    <tr>
+                        <td>PIN CODE</td>
+                        <td><input type="text" placeholder="Enter Pin Code" id="pincode" name="pincode" required title="6 digit number"></td>
+                    </tr>
+                    <tr>
+                        <td>STATE</td>
+                        <td><input type="text" placeholder="Enter State" id="state" name="state" required title="Max 30 characters a-z and A-Z"></td>
+                    </tr>
+                    <tr>
+                        <td>COUNTRY</td>
+                        <td><input type="text" placeholder="Enter Country" id="country" name="country" required title="Max 30 characters a-z and A-Z"></td>
+                    </tr>                    
+                    <tr>
+                        <td>QUALIFICATIONS</td>
+                        <td>                            
+                            <table class="q">
+                                <tr>
+                                    <th>Sr.No.</th>
+                                    <th>Examination</th>
+                                    <th>Board</th>
+                                    <th>Percentage</th>
+                                    <th>Year of Passing</th>
+                                    <th>Certificate Upload</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Class X</td>
+                                    <td><input type="text" style="width: 100%;" id="board10" name="board10" placeholder="Enter Board" required title="Enter a valid Educational Board"></td>
+                                    <td><input type="text" style="width: 100%;" id="percent10" name="percent10" placeholder="Enter Percentage" required title="Enter Percentage upto 2 decimals"></td>
+                                    <td><input type="text" style="width: 90%;" id="year10" name="year10" placeholder="Enter Year of Passing" required title="Enter the year"></td>
+                                    <td><input type="file" name="cert10" id="cert10" title="Select File"></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Class XII</td>
+                                    <td><input type="text" style="width: 100%;" id="board12" name="board12" placeholder="Enter Board" required title="Enter a valid Educational Board"></td>
+                                    <td><input type="text" style="width: 100%;" id="percent12" name="percent12" placeholder="Enter Percentage" required title="Enter Percentage upto 2 decimals"></td>
+                                    <td><input type="text" style="width: 90%;" id="year12" name="year12" placeholder="Enter Year of Passing" required title="Enter the year"></td>
+                                    <td><input type="file" name="cert12" title="Select File"></td>
+                                </tr>                                
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td><center>10 char max</center></td>
+                                    <td><center>Upto 2 decimals</center></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>                            
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td>Exam</td>
+                        <td><input type="text" value="UPSC" name="exam" id="exam"></td>
+                    </tr>                
+                    <tr>
+                        <center>
+                        <td colspan="2">
+                            <center>
+                                <input type="submit" id="submit" name="submit" value="Submit" onclick="validate()">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="Reset" id="reset" name="reset" value="Reset">
+                            </center>
+                        </td>                        
+                        </center>                        
+                    </tr>
+                </table>
+            </form>                       
+            <b>COPYRIGHT &copy 2022 SCRCET DEVELOPMENT CELL</b>                
+        </center>
+    </body>
+</html>

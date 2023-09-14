@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Login Account</title>            
+        <style>                                    
+            div{
+                font-size: 10px;
+                text-align: center;
+                color: white;
+                background-color: blue;
+                padding: 10px 10px 10px 10px;
+            }                                    
+            input[type="submit"]{
+                border-radius: 10px;
+                text-align: center;
+                color: white;
+                background-color: blue;
+                width: 30%;
+            }
+            input{
+                border: 1px solid navy;
+            }
+            input,.p1{
+                text-align: center;                
+            }
+            input[type="password"]{
+                text-align: center;
+                width: 50%;
+            }
+            .f{
+                border: 2px solid navy;
+                width: 50%;
+                padding: 20px 10px 10px 20px;                
+                color: navy;
+                font-weight: bold;
+            }
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <link rel="stylesheet" href="IWP Project Layout.css">
+        <center>                        
+            <h1 class="h"><img src="Logo.jpg" width="50" height="50">&nbsp;&nbsp;&nbsp;&nbsp;<b>ACCOUNT LOGIN</b>
+            <a href="Main Page.html"><span style="color: white;" class="glyphicon glyphicon-home"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </h1><br>
+            <br><br><br>            
+            <form class="f">   
+                <br>                 
+                Username<br>
+                <input type="text" placeholder="Enter Username" pattern="20+[A-Z]{3}+[0-9]{4}"><br><br>
+                Password<br>
+                <input type="password" placeholder="Enter Password" pattern="(?=.*\[a-z])(?=.*\[A-Z])(?=.*\d).{8,}"><br><br>
+                <p class="p1">
+                    <input type="submit" value="Login">
+                </p>
+                OR
+                <p class="p1">
+                    <input type="submit" value="Create New"><br><br>
+                </p>
+            </form>
+            <b>COPYRIGHT &copy 2022 SCRCET DEVELOPMENT CELL</b>       
+        </center>
+    </body>
+</html>
